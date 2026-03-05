@@ -111,42 +111,51 @@
           <h2 class="aps-h3" style="margin-top:16px">Parlez-nous de votre espace</h2>
           <p class="aps-note">Plus votre message est précis, plus notre réponse pourra l’être aussi.</p>
 
-          <form class="aps-form" id="apsQuoteForm">
-            <label class="aps-field">
-              <span>Nom complet</span>
-              <input type="text" placeholder="Votre nom" required>
-            </label>
-            <label class="aps-field">
-              <span>Email</span>
-              <input type="email" placeholder="vous@email.com" required>
-            </label>
-            <label class="aps-field">
-              <span>Téléphone</span>
-              <input type="tel" placeholder="(514) ...">
-            </label>
-            <label class="aps-field">
-              <span>Ville</span>
-              <input type="text" placeholder="Montréal, Laval, Longueuil...">
-            </label>
-            <label class="aps-field">
-              <span>Type de service</span>
-              <select required>
-                <option value="">Sélectionner</option>
-                <option>Nettoyage résidentiel</option>
-                <option>Grand ménage</option>
-                <option>Avant / après déménagement</option>
-                <option>Après travaux</option>
-                <option>Commercial léger</option>
-              </select>
-            </label>
-            <label class="aps-field">
-              <span>Détails utiles</span>
-              <textarea placeholder="Type d’espace, taille approximative, état général, date souhaitée et toute précision utile."></textarea>
-            </label>
-            <button class="aps-btn aps-btn--gold" type="submit">Envoyer ma demande</button>
-            <div class="aps-formMsg" id="apsFormMsg"></div>
-            <p class="aps-note">Décrivez votre besoin le plus clairement possible. Nous pourrons ainsi vous répondre plus vite et plus précisément.</p>
-          </form>
+          <form class="aps-form" id="apsQuoteForm" name="contact-fr" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+  <input type="hidden" name="form-name" value="contact-fr">
+  <input type="hidden" name="bot-field">
+
+  <label class="aps-field">
+    <span>Nom complet</span>
+    <input type="text" name="name" placeholder="Votre nom" required>
+  </label>
+
+  <label class="aps-field">
+    <span>Email</span>
+    <input type="email" name="email" placeholder="vous@email.com" required>
+  </label>
+
+  <label class="aps-field">
+    <span>Téléphone</span>
+    <input type="tel" name="phone" placeholder="(438) 470-2590">
+  </label>
+
+  <label class="aps-field">
+    <span>Ville</span>
+    <input type="text" name="city" placeholder="Montréal, Laval, Longueuil...">
+  </label>
+
+  <label class="aps-field">
+    <span>Type de service</span>
+    <select name="service" required>
+      <option value="">Sélectionner</option>
+      <option>Nettoyage résidentiel</option>
+      <option>Grand ménage</option>
+      <option>Avant / après déménagement</option>
+      <option>Après travaux</option>
+      <option>Commercial léger</option>
+    </select>
+  </label>
+
+  <label class="aps-field">
+    <span>Détails utiles</span>
+    <textarea name="message" placeholder="Type d’espace, taille approximative, état général, date souhaitée et toute précision utile." required></textarea>
+  </label>
+
+  <button class="aps-btn aps-btn--gold" type="submit">Envoyer ma demande</button>
+  <div class="aps-formMsg" id="apsFormMsg"></div>
+  <p class="aps-note">Décrivez votre besoin le plus clairement possible. Nous pourrons ainsi vous répondre plus vite et plus précisément.</p>
+</form>
         </div>
       </div>
     </div>
