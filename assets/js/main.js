@@ -71,6 +71,47 @@
         data["form-name"] = form.getAttribute("name") || "contact";
       }
 
+      const preferredContactField = form.querySelector('select[name="preferred_contact"]');
+      const preferredContact = preferredContactField ? preferredContactField.value.trim() : ''; 
+      const emailField = form.querySelector('input[name="email"]');
+      const phoneField = form.querySelector('input[name="phone"]');
+
+      if (!preferredContact) {
+        msg.classList.remove("is-success");
+        msg.classList.add("is-error");
+        msg.textContent =
+          lang === "fr"
+            ? "Choisissez la méthode de contact préférée avant d’envoyer votre demande."
+            : "Choose your preferred contact method before sending your request.";
+        return;
+      }
+
+      if (preferredContact.toLowerCase() === "téléphone" || preferredContact.toLowerCase() === "phone") {
+        if (!phoneField || !phoneField.value.trim()) {
+          msg.classList.remove("is-success");
+          msg.classList.add("is-error");
+          msg.textContent =
+            lang === "fr"
+              ? "Le numéro de téléphone est obligatoire si vous choisissez le téléphone comme méthode de contact."
+              : "A phone number is required if you choose phone as the contact method.";
+          if (phoneField) phoneField.focus();
+          return;
+        }
+      }
+
+      if (preferredContact.toLowerCase() === "email") {
+        if (!emailField || !emailField.value.trim()) {
+          msg.classList.remove("is-success");
+          msg.classList.add("is-error");
+          msg.textContent =
+            lang === "fr"
+              ? "L’adresse email est obligatoire si vous choisissez l’email comme méthode de contact."
+              : "An email address is required if you choose email as the contact method.";
+          if (emailField) emailField.focus();
+          return;
+        }
+      }
+
       if (submitBtn) {
         submitBtn.disabled = true;
       }
