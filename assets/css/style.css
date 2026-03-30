@@ -31,13 +31,13 @@ body{
   margin-bottom: 10px;
   font-size: 15px;
   font-weight: 800;
-  color: #a87400; 
+  color: #F7A528; 
   }
 .service-price-size{
   font-size: 12px;
   font-weight: 500;
   margin-left: 6px;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 img{max-width:100%;display:block}
 a{text-decoration:none;color:inherit}
