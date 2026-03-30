@@ -25,6 +25,13 @@ body{
   color:var(--ink);
   background:var(--bg-soft);
 }
+.service_price{
+  diplay:block;
+  margin-top: 6px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #b8860b;
 img{max-width:100%;display:block}
 a{text-decoration:none;color:inherit}
 button,input,select,textarea{font:inherit}
