@@ -33,6 +33,11 @@ body{
   font-weight: 700;
   color: #b8860b; 
   }
+.service-price-size{
+  font-size: 12px;
+  font-weight: 600;
+  opacity: 0.8;
+}
 img{max-width:100%;display:block}
 a{text-decoration:none;color:inherit}
 button,input,select,textarea{font:inherit}
