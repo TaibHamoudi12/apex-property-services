@@ -29,14 +29,15 @@ body{
   diplay:block;
   margin-top: 9px;
   margin-bottom: 10px;
-  font-size: 14px;
-  font-weight: 700;
-  color: #b8860b; 
+  font-size: 15px;
+  font-weight: 800;
+  color: #a87400; 
   }
 .service-price-size{
   font-size: 12px;
-  font-weight: 600;
-  opacity: 0.8;
+  font-weight: 500;
+  margin-left: 6px;
+  opacity: 0.6;
 }
 img{max-width:100%;display:block}
 a{text-decoration:none;color:inherit}
