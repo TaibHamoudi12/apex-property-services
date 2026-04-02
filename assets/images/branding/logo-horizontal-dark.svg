@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 260" role="img" aria-label="Apex Services Nettoyages">
+  <defs>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffca4e"/>
+      <stop offset="100%" stop-color="#f2b31c"/>
+    </linearGradient>
+    <linearGradient id="navyGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#183a58"/>
+      <stop offset="100%" stop-color="#12263f"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(12 18)">
+    <path d="M18 184 L86 20 L106 38 L58 184 Z" fill="url(#goldGrad)"/>
+    <path d="M88 20 L162 184 L130 184 L98 112 L70 184 L38 184 Z" fill="url(#navyGrad)"/>
+    <path d="M59 146 L118 146 L88 112 Z" fill="#ffffff" opacity="0.94"/>
+    <g transform="translate(75 128)">
+      <rect x="0" y="0" width="30" height="30" rx="4" fill="#f4d36b" stroke="#dca318" stroke-width="2"/>
+      <rect x="5" y="5" width="8" height="8" rx="1.5" fill="#ffffff"/>
+      <rect x="17" y="5" width="8" height="8" rx="1.5" fill="#ffffff"/>
+      <rect x="5" y="17" width="8" height="8" rx="1.5" fill="#ffffff"/>
+      <rect x="17" y="17" width="8" height="8" rx="1.5" fill="#ffffff"/>
+    </g>
+  </g>
+  <text x="225" y="108" fill="#12263f" font-family="Inter, Arial, sans-serif" font-size="92" font-weight="800" letter-spacing="2">APEX</text>
+  <text x="226" y="152" fill="#4f6075" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="600" letter-spacing="2.5">SERVICES NETTOYAGES</text>
+  <line x1="225" y1="176" x2="820" y2="176" stroke="#f2b31c" stroke-width="3" opacity="0.9"/>
+  <text x="226" y="222" fill="#5a6577" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="500" letter-spacing="1">Propre. Fiable. Prêt à servir.</text>
+</svg>
